@@ -35,6 +35,8 @@ const planeMat = new THREE.MeshStandardMaterial({ color: 0x808080 });
 const plane = new THREE.Mesh(planeGeo, planeMat);
 plane.rotation.x = -Math.PI/2;
 plane.receiveShadow = true;
+plane.position.set(0,0,0)
+plane.scale.set(10,10,10); 
 scene.add(plane);
 
 // Lights
@@ -52,10 +54,10 @@ scene.add(dirLight);
 
 const arenaLoader = new THREE.GLTFLoader();
 arenaLoader.load(
-  "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/arena.gltf",
+  "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/Fixarena.glb",
   (glft) => {
     const arena = glft.scene;
-    arena.position.set(0,0,0);
+    arena.position.set(-2,0,0);
     arena.scale.set(1,1,1); 
     scene.add(arena);
   }
@@ -79,7 +81,7 @@ mtlLoader.load(
                     }
                 });
                 object.position.set(0,0,0);
-                object.scale.set(1.0,1.0,1.0); 
+                object.scale.set(2.0,2.0,2.0); 
                 scene.add(object);
             },
             undefined,
