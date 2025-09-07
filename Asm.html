@@ -44,21 +44,34 @@ const ambient = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambient);
 
 const dirLight = new THREE.DirectionalLight(0xffffff, 1);
-dirLight.position.set(5,10,5);
+dirLight.position.set(30, 50, 30);
 dirLight.castShadow = true;
-dirLight.shadow.mapSize.width = 1024;
-dirLight.shadow.mapSize.height = 1024;
-dirLight.shadow.camera.near = 0.5;
-dirLight.shadow.camera.far = 50;
+dirLight.shadow.mapSize.width = 2048;
+dirLight.shadow.mapSize.height = 2048;
+dirLight.shadow.camera.near = 1;
+dirLight.shadow.camera.far = 200;
+dirLight.shadow.camera.left = -100;
+dirLight.shadow.camera.right = 100;
+dirLight.shadow.camera.top = 100;
+dirLight.shadow.camera.bottom = -100;
 scene.add(dirLight);
 
 const arenaLoader = new THREE.GLTFLoader();
 arenaLoader.load(
-  "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/Fixarena.glb",
+  "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/Tower.glb",
   (glft) => {
     const arena = glft.scene;
-    arena.position.set(-2,0,0);
-    arena.scale.set(1,1,1); 
+    arena.position.set(-25,0,-30);
+    arena.scale.set(20,20,20);
+    
+    // ตั้งค่าเงาให้ทุก Mesh
+    arena.traverse(child => {
+      if(child.isMesh){
+        child.castShadow = true;    
+        child.receiveShadow = true;  
+      }
+    });
+
     scene.add(arena);
   }
 );
