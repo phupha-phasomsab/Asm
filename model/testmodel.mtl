@@ -19,7 +19,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 1
 map_Kd https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_0_baseColor.png
-map_d https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_0_baseColor.png
 map_Bump -bm 0.500000 https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_0_normal.png
 
 newmtl c4100_Material_10
@@ -30,7 +29,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 1
 map_Kd https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_8_baseColor.png
-map_d https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_8_baseColor.png
 map_Bump -bm 0.400000 https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_8_normal.png
 
 newmtl c4100_Material_11
@@ -52,7 +50,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 1
 map_Kd https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_baseColor.png
-map_d https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_baseColor.png
 map_Bump -bm 0.450000 https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_normal.png
 
 newmtl c4100_Material_13
@@ -63,7 +60,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 1
 map_Kd https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_baseColor.png
-map_d https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_baseColor.png
 map_Bump -bm 0.450000 https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_12_normal.png
 
 newmtl c4100_Material_14
