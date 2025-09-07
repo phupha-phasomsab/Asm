@@ -28,16 +28,16 @@ document.body.appendChild(renderer.domElement);
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
-        const plane = [
+        const floor = [
             5.0, 0.0, 5.0, -5.0, 0.0, -5.0, -5.0, 0.0, 5.0, 5.0, 0.0, 5.0, 5.0, 0.0, -5.0, -5.0, 0.0, -5.0
         ];
 
-        const uvsplane = [
+        const uvsfloor = [
             -0.249005, 1.729609, 2.24126, -0.745235, 2.250958, 1.734459, -0.249005, 1.729609, -0.249005, -0.750084, 2.24126, -0.745235
         ];
         const geom2 = new THREE.BufferGeometry();
-        geom2.setAttribute('position', new THREE.Float32BufferAttribute(plane, 3));
-        geom2.setAttribute('uv', new THREE.Float32BufferAttribute(uvsplane, 2));
+        geom2.setAttribute('position', new THREE.Float32BufferAttribute(floor, 3));
+        geom2.setAttribute('uv', new THREE.Float32BufferAttribute(uvsfloor, 2));
         geom2.computeVertexNormals();
 
         const tex2 = new THREE.TextureLoader().load('https://raw.githubusercontent.com/phupha-phasomsab/UV/main/uv/textures/herringbone_brick_02_diff_1k.jpg', t => {
