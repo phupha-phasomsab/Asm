@@ -28,30 +28,13 @@ document.body.appendChild(renderer.domElement);
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
-        const floor = [
-            5.0, 0.0, 5.0, -5.0, 0.0, -5.0, -5.0, 0.0, 5.0, 5.0, 0.0, 5.0, 5.0, 0.0, -5.0, -5.0, 0.0, -5.0
-        ];
-
-        const uvsfloor = [
-            -0.249005, 1.729609, 2.24126, -0.745235, 2.250958, 1.734459, -0.249005, 1.729609, -0.249005, -0.750084, 2.24126, -0.745235
-        ];
-        const geom2 = new THREE.BufferGeometry();
-        geom2.setAttribute('position', new THREE.Float32BufferAttribute(floor, 3));
-        geom2.setAttribute('uv', new THREE.Float32BufferAttribute(uvsfloor, 2));
-        geom2.computeVertexNormals();
-
-        const tex2 = new THREE.TextureLoader().load('https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/floor%2Bwall/patterned_brick_wall_diff_1k.jpg', t => {
-            t.wrapS = THREE.RepeatWrapping;
-            t.wrapT = THREE.RepeatWrapping;
-        })
-        const mat2 = new THREE.MeshStandardMaterial({
-            map: tex2
-        })
-
-        const mesh2 = new THREE.Mesh(geom2, mat2);
-        mesh2.castShadow = true;
-        mesh2.receiveShadow = true;
-        scene.add(mesh2);
+// Plane
+const planeGeo = new THREE.PlaneGeometry(20,20);
+const planeMat = new THREE.MeshStandardMaterial({ color: 0x808080 });
+const plane = new THREE.Mesh(planeGeo, planeMat);
+plane.rotation.x = -Math.PI/2;
+plane.receiveShadow = true;
+scene.add(plane);
 
 // Lights
 const ambient = new THREE.AmbientLight(0xffffff, 0.5);
