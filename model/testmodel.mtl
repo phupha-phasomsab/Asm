@@ -81,6 +81,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 1
 map_Kd https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_15_baseColor.png
+map_d https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_15_baseColor.png
 map_Bump -bm 0.500000 https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/c4100_Material_15_normal.png
 
 newmtl c4100_Material_2
