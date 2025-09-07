@@ -1,0 +1,178 @@
+# Blender 4.5.1 LTS MTL File: 'None'
+# www.blender.org
+
+newmtl c4100_Material_0
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_0_baseColor.png
+map_d C:/c4100_Material_0_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_0_normal.png
+
+newmtl c4100_Material_1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_0_baseColor.png
+map_d C:/c4100_Material_0_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_0_normal.png
+
+newmtl c4100_Material_10
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_8_baseColor.png
+map_d C:/c4100_Material_8_baseColor.png
+map_Bump -bm 0.400000 C:/c4100_Material_8_normal.png
+
+newmtl c4100_Material_11
+Ns 62.500000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/c4100_Material_8_baseColor.png
+map_Bump -bm 0.400000 C:/c4100_Material_8_normal.png
+
+newmtl c4100_Material_12
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_12_baseColor.png
+map_d C:/c4100_Material_12_baseColor.png
+map_Bump -bm 0.450000 C:/c4100_Material_12_normal.png
+
+newmtl c4100_Material_13
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_12_baseColor.png
+map_d C:/c4100_Material_12_baseColor.png
+map_Bump -bm 0.450000 C:/c4100_Material_12_normal.png
+
+newmtl c4100_Material_14
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_12_baseColor.png
+map_d C:/c4100_Material_12_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_12_normal.png
+
+newmtl c4100_Material_15
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_15_baseColor.png
+map_d C:/c4100_Material_15_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_15_normal.png
+
+newmtl c4100_Material_2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_2_baseColor.png
+map_d C:/c4100_Material_2_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_2_normal.png
+
+newmtl c4100_Material_3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_3_baseColor.png
+map_d C:/c4100_Material_3_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_3_normal.png
+
+newmtl c4100_Material_4
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/c4100_Material_2_baseColor.png
+map_Bump -bm 0.400000 C:/c4100_Material_2_normal.png
+
+newmtl c4100_Material_5
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_2_baseColor.png
+map_d C:/c4100_Material_2_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_2_normal.png
+
+newmtl c4100_Material_6
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_3_baseColor.png
+map_d C:/c4100_Material_3_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_3_normal.png
+
+newmtl c4100_Material_7
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/c4100_Material_3_baseColor.png
+map_Bump -bm 0.400000 C:/c4100_Material_3_normal.png
+
+newmtl c4100_Material_8
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/c4100_Material_8_baseColor.png
+map_Bump -bm 0.500000 C:/c4100_Material_8_normal.png
+
+newmtl c4100_Material_9
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/c4100_Material_8_baseColor.png
+map_d C:/c4100_Material_8_baseColor.png
+map_Bump -bm 0.400000 C:/c4100_Material_8_normal.png
