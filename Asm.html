@@ -42,6 +42,41 @@ plane.position.set(0,0,0)
 plane.scale.set(10,10,10); 
 scene.add(plane);
 
+// สร้าง PointLight
+const pointLight = new THREE.PointLight(0xffaa00, 1, 50);
+pointLight.castShadow = true;
+pointLight.shadow.mapSize.width = 1024;
+pointLight.shadow.mapSize.height = 1024;
+pointLight.position.set(0, 5, 0);
+scene.add(pointLight);
+
+// เพิ่ม Sphere แสดงตำแหน่งไฟ
+const sphereLight = new THREE.Mesh(
+    new THREE.SphereGeometry(0.2, 16, 16),
+    new THREE.MeshBasicMaterial({ color: 0xffaa00 })
+);
+pointLight.add(sphereLight);
+
+// แปลงตำแหน่งเมาส์เป็น world coordinates
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+const planeHelper = new THREE.Plane(new THREE.Vector3(0,1,0), 0); // plane y=0
+
+window.addEventListener('mousemove', (event) => {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+    raycaster.setFromCamera(mouse, camera);
+    const intersect = new THREE.Vector3();
+    raycaster.ray.intersectPlane(planeHelper, intersect);
+
+    if(intersect) {
+        pointLight.position.x = intersect.x;
+        pointLight.position.z = intersect.z;
+        // สามารถปรับ y ให้สูงตามต้องการ
+        pointLight.position.y = 5;
+    }
+});
 // Lights
 const ambient = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambient);
