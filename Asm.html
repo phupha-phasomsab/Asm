@@ -14,7 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/MTLLoader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/EXRLoader.js"></script>
 <script>
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
@@ -56,6 +56,18 @@ dirLight.shadow.camera.top = 100;
 dirLight.shadow.camera.bottom = -100;
 scene.add(dirLight);
 
+const exrLoader = new THREE.EXRLoader();
+exrLoader.load(
+    "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/textures/floor%2Bwall/qwantani_sunset_1k.exr",
+    function(texture) {
+        const pmremGenerator = new THREE.PMREMGenerator(renderer);
+        const envMap = pmremGenerator.fromEquirectangular(texture).texture;
+        scene.background = envMap;
+        scene.environment = envMap;
+        texture.dispose();
+        pmremGenerator.dispose();
+    }
+);
 const arenaLoader = new THREE.GLTFLoader();
 arenaLoader.load(
   "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/Tower.glb",
