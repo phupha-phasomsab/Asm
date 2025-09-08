@@ -75,6 +75,27 @@ arenaLoader.load(
     scene.add(arena);
   }
 );
+const modelloader = new THREE.GLTFLoader();
+modelloader.load(
+  "https://raw.githubusercontent.com/phupha-phasomsab/Asm/main/model/model.glb",
+  (glft) => {
+    const model = glft.scene;
+    model.position.set(0,0,0);
+    model.scale.set(2,2,2);
+    
+    // ตั้งค่าเงาให้ทุก Mesh
+    model.traverse(child => {
+      if(child.isMesh){
+        child.castShadow = true;    
+        child.receiveShadow = true;  
+        child.material.metalness = 0;
+        child.material.roughness = 0;
+      }
+    });
+
+    scene.add(model);
+  }
+);
 // Load MTL then OBJ
 const mtlLoader = new THREE.MTLLoader();
 mtlLoader.setCrossOrigin(true);
@@ -93,7 +114,7 @@ mtlLoader.load(
                         child.receiveShadow = true;
                     }
                 });
-                object.position.set(0,0,0);
+                object.position.set(5,0,0);
                 object.scale.set(2.0,2.0,2.0); 
                 scene.add(object);
             },
